@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register </title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+    </head>
+
+<body>
+    <div class="container">
+        
+        <form>
+            <h2>Register Form</h2>
+
+            <input type="text" id="nome" onchange="mostrarDadosPreenchidos()" placeholder="Your username" class="name">
+            <input type="email" id="email" onchange="mostrarDadosPreenchidos()" placeholder="Your email" class="email">
+            <input type="password" id="passe" onchange="mostrarDadosPreenchidos()" placeholder="Your password" class="password">
+            <input type="text" id="idade" onchange="mostrarDadosPreenchidos()" placeholder="Your age" class="age">
+
+            <strong>Country:</strong>
+            <select class="country">
+                <option>option</option>
+                <option>Angola</option>
+                <option>Portual</option>
+                <option>EUA</option>
+                <option>Brasil</option>
+                <option>Espanha</option>
+
+            </select>
+            
+            <input type="button" value="Register" class="btn">
+        </form>
+    </div>
+
+    <div class="demo">
+        <div class="wrapper">
+            <h2>Welcome</h2>
+            <p class="name">Mr.      <span id="showNome"></span></p>
+            <p class="email">Email:  <span id="showEmail"></span></p>
+            <p class="age">Age:      <span id="showIdade"></span></p>
+            <!-- <p class="country">From: <span id="showCountry"></span></p> -->
+        </div>
+    </div>
+</body>
+</html>

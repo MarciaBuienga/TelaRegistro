@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .3s linear;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    width: 50%;
+    background: #091b2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+form{
+    height: auto; /* Alteração para tornar a altura automática */
+    width: 80%; /* Alteração para ocupar 80% da largura */
+    max-width: 400px; /* Adição para definir a largura máxima */
+    background: #0996cb;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #0996cb;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    margin: 20px; /* Adição para espaçamento externo */
+}
+
+form h2{
+    line-height: 100px;
+}
+
+form input{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+
+form select{
+    height: 30px;
+    width: 160px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+form .btn{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #0996cb;
+    background: #091b2a;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+form .btn:hover{
+    opacity: .7;
+}
+
+/*STYLING DEMO*/
+.demo{
+    height: 100vh;
+    width: 50%;
+    background: #0996cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.wrapper{
+    height: 300px;
+    width: 400px;
+    background: #fff;
+    line-height: 30px;
+    padding: 40px;
+    box-shadow: 10px 20px 15px #091b2a;
+    border-radius: 15px;
+}
+
+.wrapper h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper p{
+    padding: 5px;
+    line-height: 40px;
+}
+
+.wrapper p span{
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alteração para empilhar os elementos em telas menores */
+    }
+
+    form, .demo {
+        width: 100%; /* Alteração para ocupar toda a largura em telas menores */
+    }
+}
